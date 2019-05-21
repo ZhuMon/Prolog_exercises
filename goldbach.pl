@@ -25,6 +25,7 @@ gold_bach_recursion(A, N, X, Y) :-
     ((is_prime(X1), is_prime(Y1), X is X1, Y is Y1);(gold_bach_recursion(A,N1,X,Y))).
     
 gold_bach(A) :-
-    N is 0,
+    divisble(A,2), % check A is even
+    N is -1,
     gold_bach_recursion(A, N, X, Y),
     write(X),write(" "),write(Y).
