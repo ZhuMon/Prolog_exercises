@@ -30,4 +30,4 @@ print_output(N) :-
     N1 is N - 1,
     print_output(N1).
 
-:- read(N), read(E), assert(node(E)), read_edge(N), read(Q), read_query(Q), print_output(Q).
+:- read(N), read(E), assert(node(E)), read_edge(N), read(Q), read_query(Q), print_output(Q), halt.

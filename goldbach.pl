@@ -39,6 +39,6 @@ gold_bach(A) :-
     findall(Y, output(X,Y), L2),
     print_output(L1,L2).
 
-:- read(A), gold_bach(A).
+:- read(A), gold_bach(A), halt.
 
 

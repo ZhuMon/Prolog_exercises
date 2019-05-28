@@ -31,4 +31,4 @@ print_output(N) :-
     N1 is N -1,
     print_output(N1).
 
-:- read(N), repeat_read(N), read(M), lca(M), print_output(M).
+:- read(N), repeat_read(N), read(M), lca(M), print_output(M), halt.
